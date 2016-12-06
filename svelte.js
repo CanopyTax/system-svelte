@@ -1,7 +1,7 @@
-const { compile } = require('svelte');
+var compile = require('svelte').compile;
 
 exports.translate = function(load) {
-    let { code, map } = compile(load.source, {
+    var output = compile(load.source, {
       filename: load.address,
       format: 'es',
       onerror: (err) => {
@@ -14,6 +14,6 @@ exports.translate = function(load) {
       }
     });
 
-		load.source = code;
-		load.metadata.sourceMap = map;
+		load.source = output.code;
+		load.metadata.sourceMap = output.map;
 }
