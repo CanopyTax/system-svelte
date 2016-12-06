@@ -5,6 +5,8 @@ SystemJS plugin for compiling Svelte components
 ```bash
 jspm install sv=npm:system-svelte
 jspm install npm:svelte -o "{format: 'global'}"
+# The second command is necessary because SystemJS gets confused
+# about svelte's module format, this overrides it to be global
 ```
 
 ## Usage
