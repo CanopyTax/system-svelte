@@ -1,0 +1,27 @@
+{
+  "name": "system-svelte",
+  "version": "0.1.0",
+  "description": "SystemJS plugin for compiling Svelte components",
+  "main": "svelte.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CanopyTax/system-svelte.git"
+  },
+  "keywords": [
+    "svelte",
+    "systemjs",
+    "jspm"
+  ],
+  "author": "Bret Little",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CanopyTax/system-svelte/issues"
+  },
+  "homepage": "https://github.com/CanopyTax/system-svelte#readme",
+  "dependencies": {
+    "svelte": "^1.0.7"
+  }
+}
